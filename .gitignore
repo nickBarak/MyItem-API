@@ -123,7 +123,9 @@ dist
 .tern-port
 
 # Stores VSCode versions used for testing VSCode extensions
+.vscode
 .vscode-test
+.idea
 
 # yarn v3
 .pnp.*
@@ -137,3 +139,11 @@ dist
 # Vite logs files
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
+
+# Terraform
+.terraform/
+terraform.tfstate
+infra/.terraform/
+infra/terraform.tfstate
+infra/provision/.terraform/
+infra/provision/terraform.tfstate
