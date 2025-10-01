@@ -1,0 +1,48 @@
+{
+  "name": "myitem-api",
+  "version": "1.0.0",
+  "description": "MyItem API Service",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint .",
+    "build": "npm run lint && tsc",
+    "test": "npm run lint && node index.test.js",
+    "start": "npm run build && node ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nickBarak/MyItem-API.git"
+  },
+  "keywords": [
+    "MyItem",
+    "API",
+    "Service"
+  ],
+  "author": "Nick Barak",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nickBarak/MyItem-API/issues"
+  },
+  "homepage": "https://github.com/nickBarak/MyItem-API#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "pg": "^8.16.3"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.36.0",
+    "@types/express": "^5.0.3",
+    "@types/jest": "^30.0.0",
+    "@types/node": "^24.6.0",
+    "eslint": "^9.36.0",
+    "jest": "^30.2.0",
+    "jiti": "^2.6.0",
+    "nodemon": "^3.1.10",
+    "prettier": "^3.6.2",
+    "ts-jest": "^29.4.4",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.2",
+    "typescript-eslint": "^8.45.0"
+  }
+}
