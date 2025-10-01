@@ -6,8 +6,10 @@
   "scripts": {
     "lint": "eslint .",
     "build": "npm run lint && tsc",
+    "package": "npm run build && docker build -t nickbarak/myitem-api .",
     "test": "npm run lint && node index.test.js",
-    "start": "npm run build && node ."
+    "start": "npm run build && node .",
+    "launch": "npm run package && docker run --name myitem-api -p 2000:4433 nickbarak/myitem-api"
   },
   "repository": {
     "type": "git",
